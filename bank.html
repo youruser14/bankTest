@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>BANK</title>
+    <script src="bank.js" defer></script>
+    <link rel="stylesheet" href="bank.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container nav__container">
+        <h1 class="nav__title h1">Войдите в аккаунт</h1>
+        <form action="" class="nav__activate-account">
+          <input
+            type="text"
+            placeholder="Введите логин"
+            class="input_authorization authorization__log"
+            id="login"
+          />
+          <input
+            type="password"
+            placeholder="PIN"
+            maxlength="4"
+            minlength="4"
+            class="input_authorization authorization__pass"
+          />
+          <!-- <div class="btn__container"> -->
+          <button class="authorization__btn btn">Войти</button>
+          <!-- </div> -->
+        </form>
+      </div>
+    </nav>
+    <main class="main">
+      <div class="main-container container">
+        <div class="balance-info">
+          <div class="balance-title">
+            <h1 class="h1">Текущий баланс</h1>
+            <p class="p">С 03/12/2021</p>
+          </div>
+          <div class="balance-current">0000$</div>
+        </div>
+        <!--PANEL -->
+        <div class="main-panel">
+          <!-- LEFT PANEL -->
+          <div class="left-panel">
+            <div class="payment__section">
+              <!-- <div class="payment__information">
+                <div class="payment__action">
+                  <div class="payment__operation">2 Депозита</div>
+                  <div class="payment__date">2 дня назад</div>
+                </div>
+                <div class="payment__sum">5 000$</div>
+              </div>
+              <div class="payment__information">
+                <div class="payment__action">
+                  <div class="payment__operation">2 Депозита</div>
+                  <div class="payment__date">2 дня назад</div>
+                </div>
+                <div class="payment__sum">5 000$</div>
+              </div> -->
+            </div>
+          </div>
+          <!-- RIGHT PANEL -->
+          <!-- 1 CARD -->
+          <div class="right-panel">
+            <div class="card">
+              <div class="card-title">Перевести деньги</div>
+              <div class="card-content">
+                <div class="card-content__block">
+                  <input type="text" class="card-input transfer__recipient" />
+                  <h2 class="h2 card-h2">Получатель</h2>
+                </div>
+                <div class="card-content__block">
+                  <input type="text" class="card-input transfer__amount" />
+                  <h2 class="h2 card-h2">Сумма</h2>
+                </div>
+                <div class="card-content__block">
+                  <button class="card-btn transfer__btn">&#8594;</button>
+                </div>
+              </div>
+            </div>
+            <!-- 1 card -->
+            <!-- 2 card -->
+            <div class="card loam">
+              <div class="card-title">Запросить займ</div>
+              <div class="card-content">
+                <div class="card-content__block">
+                  <input type="text" class="card-input request" />
+                  <h2 class="h2 card-h2">Сумма</h2>
+                </div>
+                <div class="card-content__block">
+                  <button class="card-btn request__btn">&#8594;</button>
+                </div>
+              </div>
+            </div>
+            <!-- 2 card -->
+
+            <!-- 3 CARD -->
+            <div class="card close-check">
+              <div class="card-title">Закрыть счет</div>
+              <div class="card-content">
+                <div class="card-content__block">
+                  <input type="text" class="card-input close__name" />
+                  <h2 class="h2 card-h2">Подтвердить имя</h2>
+                </div>
+                <div class="card-content__block">
+                  <input type="text" class="card-input close__pin" />
+                  <h2 class="h2 card-h2">Подтвердить пин-код</h2>
+                </div>
+                <div class="card-content__block">
+                  <button class="card-btn close__btn">&#8594;</button>
+                </div>
+              </div>
+            </div>
+            <!-- 3 card -->
+          </div>
+          <!-- END RIGHT PANEL -->
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-wrapper">
+          <h1 class="h1 h1-footer">
+            Получение <span class="footer__payment-info receiving"></span>
+          </h1>
+          <h1 class="h1 h1-footer">
+            Вывод <span class="footer__payment-info conclusion"></span>
+          </h1>
+          <h1 class="h1 h1-footer">
+            Процент <span class="footer__payment-info procent"></span>
+          </h1>
+          <button class="sort__btn btn">Сортировать</button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- <div class="balance-info">
+  <div class="title__balance">
+    <h1 class="h1">Текущий баланс</h1>
+    <p class="p">С 03/12/2021</p>
+  </div>
+
+  <h1 class="h1 right-panel__balance">0000$</h1>
+</div>
+<div class="left-panel">
+  <div class="payment__section">
+    <div class="payment__information">
+      <div class="payment__action">
+        <div class="payment__operation">2 Депозита</div>
+        <div class="payment__date">2 дня назад</div>
+      </div>
+      <div class="payment__sum">5 000$</div>
+    </div>
+    <div class="payment__information">
+      <div class="payment__action">
+        <div class="payment__operation">2 Депозита</div>
+        <div class="payment__date">2 дня назад</div>
+      </div>
+      <div class="payment__sum">5 000$</div>
+    </div>
+  </div>
+</div>
+<div class="right-panel">
+  <div class="card__block">
+    <div class="right-panel__title">Перевести деньги</div>
+    <div class="input-block">
+      <input type="text" />
+      <h2 class="input-info">Получатель</h2>
+    </div>
+    <div class="input-block">
+      <input type="number" />
+      <h2 class="input-info">Сумма</h2>
+    </div>
+    <button class="arrow-btn">→</button>
+  </div>
+</div>
+</div> -->

@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --title-color: wheat;
+  --main-green: rgb(50, 112, 112);
+}
+
+body {
+  background-color: rgb(206, 206, 231);
+}
+
+.h1 {
+  color: var(--title-color);
+  font-size: 36px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn__container {
+  height: 350px;
+  padding: 50px;
+}
+
+.btn {
+  min-width: 150px;
+  min-height: 25px;
+  border-radius: 10px;
+  background-color: var(--title-color);
+  color: var(--main-green);
+  font-weight: 800;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  border: 1px solid #91c9ff;
+  outline: none;
+  transition: 0.35s;
+}
+
+.btn:hover {
+  color: var(--title-color);
+  background-color: rgb(26, 59, 59);
+  transform: scale(1.2);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.nav__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgb(50, 112, 112);
+  height: 100vh;
+  justify-content: center;
+  /* display: none; */
+}
+
+.nav__activate-account {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+}
+.input_authorization {
+  min-width: 200px;
+  min-height: 35px;
+  border-radius: 10px;
+  border: none;
+  cursor: text;
+  text-align: center;
+}
+.input_authorization::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+.input_authorization:focus {
+  outline: none;
+  text-align: center;
+}
+
+/* MAIN */
+
+.main-container {
+  display: none;
+}
+
+.main-panel {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* LEFT PANEL */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 45vw;
+}
+
+.payment__section {
+  background-color: #fff;
+  border-radius: 15px;
+  height: 70vh;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.payment__information {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 15px 25px;
+}
+
+.payment__information:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.payment__action {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.payment__operation {
+  color: var(--title-color);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.payment__operation-deposit {
+  background-color: var(--main-green);
+}
+
+.payment__operation-withdraw {
+  background-color: red;
+}
+
+.payment__sum {
+  font-weight: 800;
+  font-size: 26px;
+}
+
+/* BALANCE INFO */
+
+/* TITLE */
+
+.balance-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 75px;
+}
+.balance-current {
+  font-size: 36px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 45vw;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 35px 35px 50px 65px;
+  border-radius: 25px;
+  /* min-width: 504px; */
+  background: linear-gradient(
+    90deg,
+    rgba(181, 103, 233, 1) 0%,
+    rgba(223, 35, 149, 0.8491771708683473) 93%
+  );
+}
+.card:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.card-content {
+  display: flex;
+  gap: 25px;
+}
+
+.card-h2 {
+  margin-top: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.card-input {
+  border-radius: 10px;
+  border: none;
+  cursor: text;
+  min-height: 30px;
+  text-align: center;
+  opacity: 50%;
+}
+
+.card-btn {
+  background-color: #fff;
+  padding: 5px 25px;
+  border-radius: 10px;
+}
+
+.loam {
+  background: linear-gradient(
+    90deg,
+    rgba(39, 108, 81, 1) 0%,
+    rgba(138, 205, 181, 0.8491771708683473) 93%
+  );
+  padding-right: 229px;
+}
+.close-check {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 166, 99, 1) 0%,
+    rgba(75, 193, 48, 0.8491771708683473) 93%
+  );
+}
+
+.footer-wrapper {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.footer__payment-info {
+  font-weight: 800;
+  font-size: 18px;
+  /* padding-left: 10px; */
+}
+
+.h1-footer {
+  color: black;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.receiving {
+  color: var(--main-green);
+}
+
+.conclusion {
+  color: red;
+}
+
+.procent {
+  color: var(--main-green);
+}
